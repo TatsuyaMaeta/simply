@@ -7,7 +7,7 @@
             rel="stylesheet"
             href="https://bootswatch.com/5/morph/bootstrap.min.css"
         />
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     </head>
     <body>
         <nav
@@ -68,6 +68,11 @@
                 {# これならOK #} {{ user_form.email|as_crispy_field }}
                 <br /><br />
                 <input class="btn btn-primary" type="submit" value="submit" />
+                <br />
+                <br />
+                <p>Go back
+                    <a href="{% url 'dashboard' %}">dashboard</a>
+                </p>
                 <br />
                 <p>
                     Already have an account?
